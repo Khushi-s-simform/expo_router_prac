@@ -10,9 +10,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>index</Text>
-      <Button title="Login" onPress={() => router.navigate('/Login')} />
-      <Button title="Register" onPress={() => router.navigate('/Register')} />
+      <Text>Welcome !!</Text>
+      <Button title="Login" onPress={() => router.navigate("/Login")} />
+      <Button title="Register" onPress={() => router.navigate("/Register")} />
     </View>
   );
 }

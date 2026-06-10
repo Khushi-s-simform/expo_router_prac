@@ -76,12 +76,12 @@ const Register = () => {
         style={styles.input}
       />
 
-      <Button title="Register" onPress={handleRegister} />  
+      <Button title="Register" onPress={handleRegister} />
 
       <View style={{ marginTop: 12 }}>
         <Button
           title="Already have an account? Login"
-          onPress={() => router.navigate('/Login')}
+          onPress={() => router.navigate("/Login")}
         />
       </View>
     </View>

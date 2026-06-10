@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = () => {
     console.log("Username:", username);
     console.log("Password:", password);
-    router.replace("/Home");
+    router.replace("/Drawer/Home");
   };
 
   return (

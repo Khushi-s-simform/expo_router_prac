@@ -1,6 +1,6 @@
-import { View, Text, Button } from 'react-native'
-import React from 'react'
 import { router } from 'expo-router'
+import React from 'react'
+import { Button, Text, View } from 'react-native'
 
 const Detail = () => {
   return (
@@ -10,7 +10,7 @@ const Detail = () => {
         alignItems: "center",
       }}>
           <Text>Detail screen</Text>
-          <Button title='product detail' onPress={() => router.navigate('/product/1')} />
+          <Button title='product detail' onPress={() => router.navigate('/Drawer/product/1')} />
     </View>
   )
 }

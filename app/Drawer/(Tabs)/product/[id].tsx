@@ -12,8 +12,10 @@ const ProductDetail = () => {
           <Text>Product id :- {id}</Text>
           <Text>Tap to toggle id</Text>
         </Pressable>
-        <Button title="Params" onPress={() => router.navigate('/product/1/abc/xyz')} />
-        <Button title="back to home" onPress={() => router.dismissAll()} />
+        <Button
+          title="Params"
+          onPress={() => router.navigate("/Drawer/product/1/abc/xyz")}
+        />
       </View>
     );
   }
