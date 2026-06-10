@@ -1,18 +1,9 @@
-import { router } from "expo-router";
-import { Button, Text, View } from "react-native";
+import { Redirect } from "expo-router";
 
 export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Welcome !!</Text>
-      <Button title="Login" onPress={() => router.navigate("/Login")} />
-      <Button title="Register" onPress={() => router.navigate("/Register")} />
-    </View>
-  );
+  const token = "";
+  if (!token) {
+    return <Redirect href={"/(auth)/Login"} />;
+  }
+  return <Redirect href="/Drawer/Home" />;
 }

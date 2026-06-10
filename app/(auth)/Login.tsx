@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 const Login = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("khushi");
+  const [password, setPassword] = useState("khushi123");
 
   const handleLogin = () => {
     console.log("Username:", username);
@@ -33,6 +33,12 @@ const Login = () => {
       />
 
       <Button title="Login" onPress={handleLogin} />
+      <View style={{ marginTop: 12 }}>
+        <Button
+          title="Don't have an account? Register"
+          onPress={() => router.navigate("/Register")}
+        />
+      </View>
     </View>
   );
 };

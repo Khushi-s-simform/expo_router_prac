@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import { Alert, Button, StyleSheet, Text, TextInput, View } from "react-native";
 
 const Register = () => {
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [fullName, setFullName] = useState("khushi");
+  const [email, setEmail] = useState("k@gmail.com");
+  const [username, setUsername] = useState("khushi");
+  const [password, setPassword] = useState("khushi123");
+  const [confirmPassword, setConfirmPassword] = useState("khushi123");
 
   const handleRegister = () => {
     if (!fullName || !email || !username || !password || !confirmPassword) {
@@ -29,7 +29,7 @@ const Register = () => {
 
     Alert.alert("Success", "Registration completed");
 
-    router.replace("/Login");
+    router.replace("/Drawer/Home");
   };
 
   return (

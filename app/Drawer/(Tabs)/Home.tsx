@@ -1,7 +1,11 @@
+import { DrawerNavigationProp } from "@react-navigation/drawer";
+import { Link, router, useNavigation } from "expo-router";
 import React from "react";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 
 const Home = () => {
+  const navigation = useNavigation<DrawerNavigationProp<any>>();
+  
   return (
     <View
       style={{
@@ -11,6 +15,11 @@ const Home = () => {
       }}
     >
       <Text>Home</Text>
+      <Button title="Screen1" onPress={() => router.navigate('/Screen1')} />
+      {/* <Link href={'/Screen1'} prefetch>
+        Screen1
+      </Link> */}
+      <Text onPress={()=>{ navigation.openDrawer()}}>Open Drawer</Text>
     </View>
   );
 };
